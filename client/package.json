@@ -3,7 +3,7 @@
     "node" : "9.11.1"
   },
   "name": "magic-cards-client",
-  "author": "Jon Maddox <jon@jonmaddox.com>",
+  "author": "Rob Stokes <rob_stokes@me.com>",
   "license": "MIT",
   "scripts": {
     "start": "react-app-rewired start",

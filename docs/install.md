@@ -26,8 +26,8 @@ Magic Cards can be run standalone on your Pi or with a Docker container. The cho
 
 ## Docker Install
 
-[![Docker Stars](https://img.shields.io/docker/stars/jonmaddox/magic-cards.svg)](https://hub.docker.com/r/jonmaddox/magic-cards)
-[![Docker Pulls](https://img.shields.io/docker/pulls/jonmaddox/magic-cards.svg)](https://hub.docker.com/r/jonmaddox/magic-cards)
+[![Docker Stars](https://img.shields.io/docker/stars/nilskilz/magic-cards.svg)](https://hub.docker.com/r/nilskilz/magic-cards)
+[![Docker Pulls](https://img.shields.io/docker/pulls/nilskilz/magic-cards.svg)](https://hub.docker.com/r/nilskilz/magic-cards)
 
 Installing using Docker is the easiest path. You'll need to make sure you have Docker installed on your Pi first.
 
@@ -70,7 +70,7 @@ docker run \
   -p 5000:5000 \
   -v `pwd`/config:/usr/src/app/config \
   --device=/dev/input/event0 \
-  jonmaddox/magic-cards
+  nilskilz/magic-cards
 ```
 
 This will download, build, and run the container and pass in your `config` directory so it knows how to run. You may need to edit the `device` param to properly map to the input device Magic Cards will be reading from for your card reader. You can read about that in the [standalone docs](#configure).
@@ -132,7 +132,7 @@ You should pull Magic Cards down from GitHub into your Pi's home directory.
 
 ```bash
 cd ~
-git clone git@github.com:maddox/magic-cards.git
+git clone git@github.com:nilskilz/magic-cards.git
 cd magic-cards
 ```
 
@@ -171,7 +171,7 @@ This is the main configuration file. You'll need to edit a few things. Here's an
 }
 ```
 
-You need to define which input device that Magic Cards uses to detect card scanning. If the only thing you have plugged into the Pi is the scanner, more than likely it'll be `event0`. 
+You need to define which input device that Magic Cards uses to detect card scanning. If the only thing you have plugged into the Pi is the scanner, more than likely it'll be `event0`.
 
 Otherwise, the correct event path can be determined with the following commands:
 

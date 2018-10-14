@@ -1,6 +1,6 @@
 {
   "name": "magic-cards-scanner",
-  "author": "Jon Maddox <jon@jonmaddox.com>",
+  "author": "Rob <rob_stokes@me.com>",
   "license": "MIT",
   "scripts": {
     "start": "node scanner.js"
