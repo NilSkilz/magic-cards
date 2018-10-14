@@ -1,10 +1,10 @@
 {
   "name": "magic-cards",
   "version": "1.1.2",
-  "author": "Jon Maddox <jon@jonmaddox.com>",
+  "author": "Rob Stokes <rob_stokes@me.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maddox/magic-cards/issues"
+    "url": "https://github.com/nilskilz/magic-cards/issues"
   },
   "scripts": {
     "dev-client": "cd client && yarn start",

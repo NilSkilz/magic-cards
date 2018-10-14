@@ -4,11 +4,11 @@ services:
 language: bash
 script:
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
-- docker build -t jonmaddox/magic-cards .
+- docker build -t nilskilz/magic-cards .
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
-    docker tag jonmaddox/magic-cards jonmaddox/magic-cards:latest
-    docker push jonmaddox/magic-cards:latest
-    docker push jonmaddox/magic-cards
+    docker tag nilskilz/magic-cards nilskilz/magic-cards:latest
+    docker push nilskilz/magic-cards:latest
+    docker push nilskilz/magic-cards
   fi
